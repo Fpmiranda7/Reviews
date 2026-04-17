@@ -14,3 +14,8 @@ When eu tento remover o conteúdo "Matrix"
 Then o servidor retorna uma mensagem de erro sobre permissão insuficiente
 And o sistema mantém o conteúdo "Matrix" com o ano "1999"
 
+Scenario: impedir cadastro de conteúdo com duração inválida
+Given eu acesso o sistema como "moderador"
+When eu tento cadastrar o conteúdo "Avatar" com a duração "-120 min"
+Then o servidor retorna uma mensagem de erro sobre formato de dados inválido
+And o sistema não realiza o cadastro do conteúdo "Avatar"
