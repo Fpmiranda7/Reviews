@@ -30,3 +30,4 @@ And o novo conteúdo deve passar a ser listado no catálogo geral do sistema
 
 teste 3
 teste 1
+teste 2
