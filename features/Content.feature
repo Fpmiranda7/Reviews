@@ -19,7 +19,6 @@ Given eu acesso o sistema como "moderador"
 When eu tento cadastrar o conteúdo "Avatar" com a duração "-120 min"
 Then o servidor retorna uma mensagem de erro sobre formato de dados inválido
 And o sistema não realiza o cadastro do conteúdo "Avatar"
-And (só para completar a atividade 7)
 
 Scenario: cadastrar novo item de entretenimento com sucesso
 Given eu acesso o sistema com um usuário que possui permissão de moderador 
