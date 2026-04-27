@@ -25,3 +25,4 @@ And eu seleciono a categoria "Filmes"
 And eu seleciono para publicar
 Then eu vejo uma mensagem de erro indicando que o título é obrigatório
 And eu vejo que o post não foi publicado
+And eu vejo que os campos que foram preenchidos permanecem com os dados correspondentes
